@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula de Web I</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <body>
+    <main class="content">
+        <form method="POST" action="" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Cadastro</legend>
+            <div>
+                <label for="nome">Nome: </label>
+                 <input type="text" name="nome" id="nome" placeholder="José" />
+             </div>
+             <div>
+                 <label for="email">Email:</label>
+                 <input type="email" name="email" placeholder="jose@gmail.com" />
+             </div>
+             <div>
+                 <label for="sexo"> </label>
+                 <input type="radio" name="sexo" value="Feminino" />
+                 <label>Feminino</label>
+                 <input type="radio" name="sexo" value="Masculino" />
+                 <label>Masculino</label>
+             </div>
+                 <label for="estado/cidade">Estado/Cidade:</label>
+                 <select name="estado/cidade" id="estado/cidade" required>
+                   <option></option>
+                   <option value="1">Minas Gerais</option>
+                   <option value="2">Rio de Janeiro</option>
+                   <option value="3">São Paulo</option>
+                 </select>
+                 <input type="text" value="estado/cidade">
+             <div>
+             <div>
+               <label for="arquivo">Selecione um arquivo:</label>
+              <input type="file" name="arquivo[]" multiple />
+             </div>  
+             <div>
+               <label for="sugestões">Sugestão:</label><br />
+              <textarea name="mensagem"></textarea>
+             </div>
+             <div>
+               <label for="enviar"></label>
+               <button type="submit"> <img src="img/enviar.png"/> </button>
+            </div>
+            
